@@ -5,7 +5,8 @@
 from geometry import Point, Rectangle, Circle
 from strips import StripStructure
 
-
+file_nm = open("points1.txt")
+print(file_nm.readline())
 def read(file_nm, no_strips):
     """Reads a file with on the first uncommented line a bbox 
     (4 numbers separated by a space) and subsequently 0 or more lines with 
@@ -16,7 +17,7 @@ def read(file_nm, no_strips):
 
     Returns - None or a StripStructure instance
     """
-    pass
+    file_nm.readline(1)
 
 
 def dump(structure, strip_file_nm="strips.wkt", point_file_nm="points.wkt"):
