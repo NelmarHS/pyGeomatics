@@ -1,6 +1,6 @@
 # GEO1000 - Assignment 3
-# Authors:
-# Studentnumbers:
+# Authors: Joost de Witte & Daan Noordam
+# Studentnumbers: 5656176 & 5148766
 
 import math
 
@@ -117,7 +117,6 @@ class Circle:
             return False
 
 
-
 class Rectangle:
 
     def __init__(self, pt_ll, pt_ur):
@@ -200,13 +199,12 @@ def _test():
 
     # rectangle - circle collision
     c = Circle(Point(-1, -1), 1)
-    r4 = Rectangle(Point(0, 0), Point(10, 10)) # does not collide circle
+    r4 = Rectangle(Point(0, 0), Point(10, 10))  # does not collide circle
     r5 = Rectangle(Point(-5, -5), Point(10, 10))  # collides with circle
     assert not c.intersects(r4)
     assert not r4.intersects(c)
     assert c.intersects(r5)
     assert r5.intersects(c)
-
 
     # Extend this method to be sure that you test all intersects methods!
     # Read Section 16.5 of the book if you have never seen the assert statement
@@ -232,7 +230,7 @@ def _test():
     # Circle - circle collision
     c1 = Circle(Point(0, 0), 5)
     c2 = Circle(Point(8, 0), 5)  # collides with c1 (center distance = 8, radius sum = 10)
-    c3 = Circle(Point(12, 0), 1) #  does not collide with c1 (center distance = 12, radius sum = 6)
+    c3 = Circle(Point(12, 0), 1)  # does not collide with c1 (center distance = 12, radius sum = 6)
     assert c1.intersects(c2)
     assert c2.intersects(c1)
     assert not c1.intersects(c3)
@@ -241,11 +239,12 @@ def _test():
     # rect - rect collision
     r1 = Rectangle(Point(0, 0), Point(10, 10))
     r2 = Rectangle(Point(5, 5), Point(15, 15))  # collides (ll is in center of r1)
-    r3 = Rectangle(Point(20, 20), Point(30, 30)) # does not collide (ur is rightside-above r1)
+    r3 = Rectangle(Point(20, 20), Point(30, 30))  # does not collide (ur is rightside-above r1)
     assert r1.intersects(r2)
     assert r2.intersects(r1)
     assert not r1.intersects(r3)
     assert not r3.intersects(r1)
+
 
 if __name__ == "__main__":
     _test()
