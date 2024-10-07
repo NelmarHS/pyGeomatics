@@ -41,8 +41,6 @@ def parse(geom_str):
         return None
 
 
-
-
 def print_statistics(result):
     """Prints statistics for the resulting list of Points of a query
 
@@ -53,7 +51,7 @@ def print_statistics(result):
     Returns - None
     """
     # Result box
-    print("+", 14 * "-", "+\n", "+", "Result", "     ", "+\n", "+", 14 * "-", "+")
+    print(" +--------------+", "\n", "+ Result       +", "\n", "+--------------+")
 
     if len(result) == 0:
         print("No points overlapping")
@@ -69,7 +67,6 @@ def print_statistics(result):
 
             if (pt.x > rightmost.x) or (pt.x == rightmost.x and pt.y > rightmost.y):
                 rightmost = pt
-
 
         print(f"Number of points overlapping: {len(result)}")
         print(f"leftmost: {leftmost} id: {id(leftmost)}")
@@ -94,6 +91,7 @@ Querying:
     with a circle:    c <cx> <cy> <radius>
     with a rectangle: r <llx> <lly> <urx> <ury>"""
     print(helptxt)
+
 
 # =============================================================================
 # Below are some commands that you may use to test your codes:

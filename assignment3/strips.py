@@ -33,7 +33,6 @@ class StripStructure:
             strip = Strip(Rectangle(Point(ll_x, extent.ll.y), Point(ur_x, extent.ur.y)))
             self.strips.append(strip)
 
-
     def find_overlapping_strips(self, shape):
         """Returns a list of strip objects for which their rectangle intersects 
         with the shape given.
@@ -45,7 +44,6 @@ class StripStructure:
             # apply geometry.py intersect on the strip and shape given
             if strip.rect.intersects(shape):
                 overlapping_strips.append(strip)
-
         return overlapping_strips
 
     def query(self, shape):
@@ -87,14 +85,17 @@ class StripStructure:
         # If 1, the point is added to the strip. If 2, point is on the seam, it is added to the left most strip
         if len(overlapping_strips) == 1:
             overlapping_strips[0].points.append(pt)
-        else:
+        elif len(overlapping_strips) == 2:
             # leftmost_strip is determined by ll.x coordinate
             if overlapping_strips[0].rect.ll.x < overlapping_strips[1].rect.ll.x:
                 leftmost_strip = overlapping_strips[0]
             else:
                 leftmost_strip = overlapping_strips[1]
-
             leftmost_strip.points.append(pt)
+        else:
+            print("Error: Point is in none of the strips")
+
+
 
     def print_strip_statistics(self):
         """Prints:

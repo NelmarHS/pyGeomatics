@@ -159,7 +159,7 @@ class Rectangle:
             width = x_right - x_left
             height = y_top - y_bottom
             # if the width and height are positive, there is overlapping
-            return width > 0 and height > 0
+            return width >= 0 and height >= 0
         else:
             return False
 
