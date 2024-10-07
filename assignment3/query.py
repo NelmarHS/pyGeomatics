@@ -17,7 +17,29 @@ def parse(geom_str):
 
     Returns - Point, Circle, or Rectangle
     """
-    pass
+    # Check format by 1. first letter 2. length of input
+    input_length = len(geom_str.split())
+
+    # Point input
+    if input_length == 3 and geom_str[0] == 'p':
+        px, py = float(geom_str[1]), float(geom_str[2])
+        return Point(px, py)
+
+    # Circle input
+    elif input_length == 4 and geom_str[0] == 'c':
+        cx, cy, r = float(geom_str[1]), float(geom_str[2]), float(geom_str[3])
+        return Circle(Point(cx, cy), r)
+
+    # Rectangle input
+    elif input_length == 5 and geom_str[0] == 'r':
+        llx, lly, urx, ury = float(geom_str[1]), float(geom_str[2]), float(geom_str[3]), float(geom_str[4])
+        return Rectangle(Point(llx, lly), Point(urx, ury))
+
+    # Invalid input format
+    else:
+        return None
+
+
 
 
 def print_statistics(result):
@@ -29,7 +51,27 @@ def print_statistics(result):
 
     Returns - None
     """
-    pass
+    # Result box
+    print("+", 14 * "-", "+\n", "+", "Result", "     ", "+\n", "+", 14 * "-", "+")
+
+    if len(result) == 0:
+        print("No points overlapping")
+    else:
+        leftmost = result[0]  # Start of iteration
+        rightmost = result[0]
+
+        # For every pt entry in result, check if the pt is more left/right from the previous iteration.
+        # If tied, for leftmost, pick the lower pt. For rightmost, pick higher one.
+        for pt in result[1:]:
+            if (pt.x < leftmost.x) or (pt.x == leftmost.x and pt.y < leftmost.y):
+                leftmost = pt
+
+            if (pt.x > rightmost.x) or (pt.x == rightmost.x and pt.y > rightmost.y):
+                rightmost = pt
+
+        print(f"Number of points overlapping: {len(result)}")
+        print(f"leftmost: {leftmost} id: {id(leftmost)}")
+        print(f"rightmost: {rightmost} id: {id(rightmost)}")
 
 
 def print_help():

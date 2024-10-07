@@ -180,7 +180,7 @@ class Rectangle:
 
 def _test():
     """Test whether your implementation of all methods works correctly.
-    Test checklist:
+    Test scenario checklist:
     point - point
     rect - rect
     circle - circle
@@ -190,8 +190,8 @@ def _test():
     """
     # point - point collision
     pt0 = Point(0, 0)
-    pt1 = Point(0, 0)
-    pt2 = Point(10, 10)
+    pt1 = Point(0, 0) # collides with pt0
+    pt2 = Point(10, 10) # does not collide with pt0
     assert pt0.intersects(pt1)
     assert pt1.intersects(pt0)
     assert not pt0.intersects(pt2)
