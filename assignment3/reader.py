@@ -1,6 +1,6 @@
 # GEO1000 - Assignment 3
-# Authors:
-# Studentnumbers:
+# Authors: Joost de Witte & Daan Noordam
+# Studentnumbers: 5656176 & 5148766
 
 from geometry import Point, Rectangle, Circle
 from strips import StripStructure
@@ -45,9 +45,9 @@ def read(file_nm, no_strips):
         if len(line.split()) != 2:
             continue  # Skip this iteration (invalid format of point)
 
-    # initialise point and append it to the strip_structure
-    pt = Point(float(line.split()[0]), float(line.split()[1]))
-    strip_structure.append_point(pt)
+        # initialise point and append it to the strip_structure
+        pt = Point(float(line.split()[0]), float(line.split()[1]))
+        strip_structure.append_point(pt)
 
     return strip_structure
 
@@ -68,7 +68,6 @@ def _test():
     the read and dump functions work correctly.
     """
     pass
-
 
 if __name__ == "__main__":
     _test()

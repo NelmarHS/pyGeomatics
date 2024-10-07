@@ -1,6 +1,6 @@
 # GEO1000 - Assignment 3
-# Authors:
-# Studentnumbers:
+# Authors: Joost de Witte & Daan Noordam
+# Studentnumbers: 5656176 & 5148766
 
 from reader import read
 from geometry import Rectangle, Circle, Point
@@ -19,6 +19,7 @@ def parse(geom_str):
     """
     # Check format by 1. first letter 2. length of input
     input_length = len(geom_str.split())
+    geom_str = geom_str.split()
 
     # Point input
     if input_length == 3 and geom_str[0] == 'p':
@@ -68,6 +69,7 @@ def print_statistics(result):
 
             if (pt.x > rightmost.x) or (pt.x == rightmost.x and pt.y > rightmost.y):
                 rightmost = pt
+
 
         print(f"Number of points overlapping: {len(result)}")
         print(f"leftmost: {leftmost} id: {id(leftmost)}")

@@ -28,10 +28,11 @@ class StripStructure:
         strip_width = total_width / no_strips
         for i in range(no_strips):
             ll_x = extent.ll.x + i * strip_width  # left x boundary of the strip
-            ur_x = extent.ur.x + (i + 1) * strip_width  # right x boundary of strip
+            ur_x = ll_x + strip_width  # right x boundary of strip
             # Use geometry.py objects to create a new Strip and append the strip to list
             strip = Strip(Rectangle(Point(ll_x, extent.ll.y), Point(ur_x, extent.ur.y)))
             self.strips.append(strip)
+
 
     def find_overlapping_strips(self, shape):
         """Returns a list of strip objects for which their rectangle intersects 
@@ -44,6 +45,7 @@ class StripStructure:
             # apply geometry.py intersect on the strip and shape given
             if strip.rect.intersects(shape):
                 overlapping_strips.append(strip)
+
         return overlapping_strips
 
     def query(self, shape):
