@@ -95,8 +95,6 @@ class StripStructure:
         else:
             print("Error: Point is in none of the strips")
 
-
-
     def print_strip_statistics(self):
         """Prints:
         * how many strips there are in the structure

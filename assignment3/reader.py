@@ -51,6 +51,7 @@ def read(file_nm, no_strips):
 
     return strip_structure
 
+
 def dump(structure, strip_file_nm="strips.wkt", point_file_nm="points.wkt"):
     """Dump the contents of a strip structure to 2 files that can be opened
     with QGIS.
@@ -68,6 +69,7 @@ def _test():
     the read and dump functions work correctly.
     """
     pass
+
 
 if __name__ == "__main__":
     _test()
