@@ -38,6 +38,7 @@ def parse(geom_str):
 
     # Invalid input format
     else:
+        print("Incorrect format given")
         return None
 
 
@@ -50,7 +51,6 @@ def print_statistics(result):
 
     Returns - None
     """
-    # Result box
     print(" +--------------+", "\n", "+ Result       +", "\n", "+--------------+")
 
     if len(result) == 0:

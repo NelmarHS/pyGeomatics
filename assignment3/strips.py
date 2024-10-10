@@ -117,10 +117,10 @@ class StripStructure:
             ll = strip.rect.ll
             ur = strip.rect.ur
 
-            # Print the statistics for the current strip in the required format
+            # Print the statistics for the current strip in the sample run format
             print(f"#{strip_nr} with {points_amount} points, ll: POINT ({ll.x} {ll.y}), ur: POINT ({ur.x} {ur.y})")
 
-            # Increment the strip_id for the next strip
+            # Increment the strip counter for the next strip
             strip_nr += 1
 
     def dumps_strips(self):

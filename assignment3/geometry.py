@@ -96,7 +96,6 @@ class Circle:
         """
         if isinstance(other, Point):
             # Make use of symmetry (point vs. circle = circle vs. point)
-            # self = circle, other = point
             return other.intersects(self)
         elif isinstance(other, Circle):
             # Two circles collide if the distance between centers is less than or equal to sum of radi
@@ -143,11 +142,9 @@ class Rectangle:
         """
         if isinstance(other, Point):
             # Make use of symmetry (point vs. rect = rect vs. point)
-            # self = rect, other = point
             return other.intersects(self)
         elif isinstance(other, Circle):
             # Make use of symmetry (circ vs. rect = rect vs. circ)
-            # self = rect, other = circ
             return other.intersects(self)
         elif isinstance(other, Rectangle):
             # find the coordinates of the "common" overlapping rectangle

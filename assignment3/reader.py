@@ -27,10 +27,12 @@ def read(file_nm, no_strips):
 
     # Check is there is any lines left after removing comments
     if len(lines) == 0:
+        print(f"No lines left after removing commented lines")
         return None
 
     # First line is now the bbox, check if format is correct and define extent and
     if len(lines[0].split()) != 4:  # should result in list of 4
+        print(f"bbox format incorrect")
         return None
 
     ll_point = Point(float(lines[0].split()[0]), float(lines[0].split()[1]))
