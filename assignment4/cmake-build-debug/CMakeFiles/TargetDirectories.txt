@@ -1,0 +1,3 @@
+C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/nbody.dir
+C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
