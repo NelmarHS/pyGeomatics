@@ -23,11 +23,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e629138-10fd-4667-a03b-c820873e57cf" name="Changes" comment="assignment 3 - Final v5 - handing in">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/notes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/general/studentdata.txt" afterDir="false" />
-    </list>
+    <list default="true" id="2e629138-10fd-4667-a03b-c820873e57cf" name="Changes" comment="assignment 4 - first commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +75,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Joost de Witte\CLionProjects\pyGeomatics\general" />
+    </key>
+  </component>
   <component name="RunManager" selected="CMake Application.nbody">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -171,7 +172,7 @@
       <workItem from="1728339758931" duration="2389000" />
       <workItem from="1728563989475" duration="11000" />
       <workItem from="1728902607500" duration="1774000" />
-      <workItem from="1729007676394" duration="1961000" />
+      <workItem from="1729007676394" duration="2408000" />
     </task>
     <task id="LOCAL-00001" summary="Geometry finished">
       <option name="closed" value="true" />
@@ -213,7 +214,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728558068107</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="assignment 4 - first commit">
+      <option name="closed" value="true" />
+      <created>1729011111854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729011111854</updated>
+    </task>
+    <task id="LOCAL-00007" summary="assignment 4 - first commit">
+      <option name="closed" value="true" />
+      <created>1729011133852</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729011133852</updated>
+    </task>
+    <task id="LOCAL-00008" summary="assignment 4 - first commit">
+      <option name="closed" value="true" />
+      <created>1729011155856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729011155856</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +266,8 @@
     <MESSAGE value="assignment 3 - finished v1" />
     <MESSAGE value="assignment 3 - finished v2 - bug r 2 2 8 4 still present" />
     <MESSAGE value="assignment 3 - Final v5 - handing in" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 3 - Final v5 - handing in" />
+    <MESSAGE value="assignment 4 - first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 4 - first commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pyGeomatics$geometry.coverage" NAME="geometry Coverage Results" MODIFIED="1728294914274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignment3" />
