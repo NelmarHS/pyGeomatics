@@ -11,6 +11,7 @@
 
 import sys
 from math import sqrt, pi as PI
+import csv
 
 
 def combinations(l):
@@ -113,10 +114,27 @@ def offset_momentum(ref, bodies=SYSTEM, px=0.0, py=0.0, pz=0.0):
     v[2] = pz / m
 
 
+def write_to_csv(filename, bodies, n, dt):
+    with open(filename, mode='w', newline='') as file:
+        writer = csv.writer(file, delimiter=';')
+        writer.writerow(["body", "x", "y", "z"])
+
+        # every timestep
+        for step in range(n):
+            advance(dt, 1)
+
+            # every body
+            for name, (position, velocity, mass) in bodies.items():
+                x, y, z = position
+                writer.writerow([name, x, y, z])
+
+
+
 def main(n, ref="sun"):
     offset_momentum(BODIES[ref])
     report_energy()
     advance(0.01, n)
+    write_to_csv('nbody_py_output.csv', BODIES, n, 0.01)
     report_energy()
 
 

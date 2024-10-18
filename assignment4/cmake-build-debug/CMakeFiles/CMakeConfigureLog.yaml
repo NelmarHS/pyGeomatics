@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48y0rx"
-      binary: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48y0rx"
+      source: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3c71tn"
+      binary: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3c71tn"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -119,28 +119,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-48y0rx'
+        Change Dir: 'C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3c71tn'
         
-        Run Build Command(s): "F:/Program files/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_adafe\\fast
-        	"F:\\Program files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_adafe.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_adafe.dir\\build
-        Building C object CMakeFiles/cmTC_adafe.dir/CMakeCCompilerABI.c.obj
-        	"F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_adafe.dir\\CMakeCCompilerABI.c.obj.d --working-dir="C:\\Users\\Joost de Witte\\CLionProjects\\pyGeomatics\\assignment4\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-48y0rx" --filter-prefix="Note: including file: " -- F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\JOOSTD~1\\AppData\\Local\\Temp\\nm937A.tmp
-        CMakeCCompilerABI.c
-        Linking C executable cmTC_adafe.exe
-        	"F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_adafe.dir --rc=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_adafe.dir\\objects1.rsp @C:\\Users\\JOOSTD~1\\AppData\\Local\\Temp\\nm9436.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_adafe.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_adafe.dir/embed.manifest
-        RC Pass 1:
-        F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_adafe.dir/manifest.res CMakeFiles\\cmTC_adafe.dir/manifest.rc
-        LINK Pass 1:
-        F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_adafe.dir\\objects1.rsp /out:cmTC_adafe.exe /implib:cmTC_adafe.lib /pdb:C:\\Users\\Joost de Witte\\CLionProjects\\pyGeomatics\\assignment4\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-48y0rx\\cmTC_adafe.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_adafe.dir/intermediate.manifest CMakeFiles\\cmTC_adafe.dir/manifest.res
-        MT:
-        F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_adafe.dir/intermediate.manifest /out:CMakeFiles\\cmTC_adafe.dir/embed.manifest /notify_update
-        RC Pass 2:
-        F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_adafe.dir/manifest.res CMakeFiles\\cmTC_adafe.dir/manifest.rc
-        FINAL LINK:
-        F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_adafe.dir\\objects1.rsp /out:cmTC_adafe.exe /implib:cmTC_adafe.lib /pdb:C:\\Users\\Joost de Witte\\CLionProjects\\pyGeomatics\\assignment4\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-48y0rx\\cmTC_adafe.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_adafe.dir/intermediate.manifest CMakeFiles\\cmTC_adafe.dir/manifest.res
+        Run Build Command(s): "F:/Program files/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -v cmTC_73f27
+        [1/2] F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_73f27.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_73f27.dir\\ /FS -c "F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_73f27.dir --rc=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_73f27.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_73f27.exe /implib:cmTC_73f27.lib /pdb:cmTC_73f27.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -180,8 +163,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-08t38z"
-      binary: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-08t38z"
+      source: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzorbl"
+      binary: "C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzorbl"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -191,28 +174,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-08t38z'
+        Change Dir: 'C:/Users/Joost de Witte/CLionProjects/pyGeomatics/assignment4/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gzorbl'
         
-        Run Build Command(s): "F:/Program files/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2d6d1\\fast
-        	"F:\\Program files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_2d6d1.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2d6d1.dir\\build
-        Building CXX object CMakeFiles/cmTC_2d6d1.dir/CMakeCXXCompilerABI.cpp.obj
-        	"F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2d6d1.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="C:\\Users\\Joost de Witte\\CLionProjects\\pyGeomatics\\assignment4\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-08t38z" --filter-prefix="Note: including file: " -- F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\JOOSTD~1\\AppData\\Local\\Temp\\nm985C.tmp
-        CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_2d6d1.exe
-        	"F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2d6d1.dir --rc=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2d6d1.dir\\objects1.rsp @C:\\Users\\JOOSTD~1\\AppData\\Local\\Temp\\nm9918.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_2d6d1.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_2d6d1.dir/embed.manifest
-        RC Pass 1:
-        F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2d6d1.dir/manifest.res CMakeFiles\\cmTC_2d6d1.dir/manifest.rc
-        LINK Pass 1:
-        F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2d6d1.dir\\objects1.rsp /out:cmTC_2d6d1.exe /implib:cmTC_2d6d1.lib /pdb:C:\\Users\\Joost de Witte\\CLionProjects\\pyGeomatics\\assignment4\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-08t38z\\cmTC_2d6d1.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2d6d1.dir/intermediate.manifest CMakeFiles\\cmTC_2d6d1.dir/manifest.res
-        MT:
-        F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2d6d1.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2d6d1.dir/embed.manifest /notify_update
-        RC Pass 2:
-        F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2d6d1.dir/manifest.res CMakeFiles\\cmTC_2d6d1.dir/manifest.rc
-        FINAL LINK:
-        F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2d6d1.dir\\objects1.rsp /out:cmTC_2d6d1.exe /implib:cmTC_2d6d1.lib /pdb:C:\\Users\\Joost de Witte\\CLionProjects\\pyGeomatics\\assignment4\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-08t38z\\cmTC_2d6d1.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2d6d1.dir/intermediate.manifest CMakeFiles\\cmTC_2d6d1.dir/manifest.res
+        Run Build Command(s): "F:/Program files/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -v cmTC_1c82d
+        [1/2] F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1c82d.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_1c82d.dir\\ /FS -c "F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "F:\\Program files\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1c82d.dir --rc=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=F:\\WINDOW~2\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- F:\\PROGRA~1\\MICROS~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1c82d.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_1c82d.exe /implib:cmTC_1c82d.lib /pdb:cmTC_1c82d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -

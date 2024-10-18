@@ -1,0 +1,74 @@
+import subprocess # as per footnote in chapter 14.8, using subprocess module
+import time
+import csv
+
+
+# path locations of the files and the iteration settings
+cpp_debug = "cmake-build-debug/nbody.exe"
+cpp_release = "cmake-build-release/nbody.exe"
+python = "nbody.py"
+iteration_steps = 1 # fill in the amount of iteration steps must be done
+iteration_base = 500 # fill in the base iteration number (consequent iteration steps are multiplied by 10)
+N = []
+for i in range(iteration_steps):
+    N.append(iteration_base * (10 ** i))
+
+
+
+def run_command(command, workdir):
+    """saves the start_time, then runs the subprocess, then saves the end_time, returns the difference i.e. exec_time
+    """
+    start_time = time.perf_counter()
+    # The work directory is added to ensure that the cpp_output.csv is put in the main directory (where runtime.py is
+    # located) and not on folder back (parent folder). This is necessary because of the solution in nbody.cpp that ensures
+    # placement of the output folder in the main folder (nbody.cpp line 249)
+    subprocess.run(command, cwd=workdir)
+    end_time = time.perf_counter()
+    return end_time - start_time
+
+
+def benchmark_cpp_debug(file, workdir):
+    results_cpp_debug = []
+    for iteration in N:
+        command = f".\{file} {iteration}" # terminal command to run the file (as per assignment)
+        exec_time = run_command(command, workdir)
+        results_cpp_debug.append((f"C++ (debug)", iteration, exec_time))
+    return results_cpp_debug
+
+def benchmark_cpp_release(file, workdir):
+    results_cpp_release = []
+    for iteration in N:
+        command = f".\{file} {iteration}" # terminal command to run the file (as per assignment)
+        exec_time = run_command(command, workdir)
+        results_cpp_release.append((f"C++ (release)", iteration, exec_time))
+    return results_cpp_release
+
+
+def benchmark_python(file, workdir):
+    results_python = []
+    for iterations in N:
+        command = f"py {file} {iterations}" # terminal command to run the file (as per assignment)
+        exec_time = run_command(command, workdir)
+        results_python.append(("Python", iterations, exec_time))
+    return results_python
+
+def write_to_csv(file, results_all):
+    with open(file, mode='w', newline='') as file:
+        writer = csv.writer(file, delimiter=';')
+        writer.writerow(["Language", "iteration", "exec time"])
+
+        for i in results_all:
+            writer.writerow([i[0], i[1], i[2]])
+
+
+# function calls to run the benchmarks
+cpp_debug_results = benchmark_cpp_debug(cpp_debug, workdir="cmake-build-debug")
+cpp_release_results = benchmark_cpp_release(cpp_release, workdir="cmake-build-release")
+python_results = benchmark_python(python, workdir=None)
+results_all = cpp_debug_results + cpp_release_results + python_results
+write_to_csv("benchmark_results.csv", results_all)
+
+
+
+
+

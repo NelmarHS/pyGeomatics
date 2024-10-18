@@ -14,6 +14,8 @@
 #define _USE_MATH_DEFINES // https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants?view=msvc-160
 #include <cmath>
 #include <iostream>
+#include <fstream>
+#include <filesystem>
 
 
 // these values are constant and not allowed to be changed
@@ -238,6 +240,32 @@ body state[] = {
         }
 };
 
+void write_to_csv(body state[BODIES_COUNT], unsigned int n, double dt) {
+    /*
+    Just "std::ofstream file(filename)" dumped the csv in the current working directory (cmake-build-debug). In order to
+    place the csv file in the directory where nbody.cpp was located, I found the following solution: The
+    output_path is constructed of: the working directory -> going one directory level back -> adding the filename.
+     */
+    std::filesystem::path output_path = std::filesystem::current_path().parent_path() / "nbody_cpp_output.csv";
+    std::ofstream file(output_path);
+
+    file << "body;x;y;z\n";
+
+    // every timestep
+    for (unsigned int step = 0; step < n; ++step) {
+        advance(state, dt);
+
+        // every body
+        for (unsigned int i = 0; i < BODIES_COUNT; ++i) {
+            file << state[i].name << ";"
+                 << state[i].position.x << ";"
+                 << state[i].position.y << ";"
+                 << state[i].position.z << "\n";
+        }
+    }
+    file.close();
+}
+
 
 int main(int argc, char **argv) {
     if (argc != 2) {
@@ -247,12 +275,12 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     } else {
         const unsigned int n = atoi(argv[1]);
-        offset_momentum(state);
         std::cout << energy(state) << std::endl;
+        write_to_csv(state, n, 0.01);
         for (int i = 0; i < n; ++i) {
             advance(state, 0.01);
         }
         std::cout << energy(state) << std::endl;
-        return EXIT_SUCCESS;
+                return EXIT_SUCCESS;
     }
 }
