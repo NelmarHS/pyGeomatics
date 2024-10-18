@@ -1,13 +1,19 @@
+"""This script automatically runs the nbody.py, nbody.exe (debug) and nbody.exe (release). In order for this script
+to work, the nbody.cpp must first be manually ran in debug and release mode"""
 import subprocess # as per footnote in chapter 14.8, using subprocess module
 import time
 import csv
+import pandas as pd
+import matplotlib.pyplot as plt
+
 
 
 # path locations of the files and the iteration settings
 cpp_debug = "cmake-build-debug/nbody.exe"
 cpp_release = "cmake-build-release/nbody.exe"
 python = "nbody.py"
-iteration_steps = 5 # fill in the amount of iteration steps must be done
+file_name_benchmark = "benchmark_results.csv"
+iteration_steps = 4 # fill in the amount of iteration steps must be done
 iteration_base = 500 # fill in the base iteration number (consequent iteration steps are multiplied by 10)
 N = []
 for i in range(iteration_steps):
@@ -66,15 +72,40 @@ def write_to_csv(file, results_all):
         writer.writerow([f"Total runtime = {total_time}"])
 
 
+def csv_to_graph(file_name_benchmark, iteration_steps, N):
+    df = pd.read_csv(file_name_benchmark, sep=';')
+
+    # creating sublists that contain the time values the different
+    cpp_debug_times, cpp_release_times , python_times = [], [], []
+    for i in range(len(N)):
+        cpp_debug_times.append(df.iloc[i, 2])
+        cpp_release_times.append(df.iloc[i + iteration_steps, 2])
+        python_times.append(df.iloc[i + iteration_steps * 2, 2])
+
+    plt.plot(N, cpp_debug_times, label='C++ debug')
+    plt.plot(N, cpp_release_times, label='C++ release')
+    plt.plot(N, python_times, label='Python')
+    plt.xlabel('Iteration size')
+    plt.ylabel('runtime (sec)')
+    plt.xscale('log')
+    plt.xticks(N, labels=[str(iteration) for iteration in N])
+    plt.title('C++ debug, C++ release and Python runtimes')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
+
 
 
 # function calls to run the benchmarks
-cpp_debug_results = benchmark_cpp_debug(cpp_debug, workdir="cmake-build-debug")
-cpp_release_results = benchmark_cpp_release(cpp_release, workdir="cmake-build-release")
-python_results = benchmark_python(python, workdir=None)
-results_all = cpp_debug_results + cpp_release_results + python_results
-write_to_csv("benchmark_results.csv", results_all)
-
+if __name__ == "__main__":
+    cpp_debug_results = benchmark_cpp_debug(cpp_debug, workdir="cmake-build-debug")
+    cpp_release_results = benchmark_cpp_release(cpp_release, workdir="cmake-build-release")
+    python_results = benchmark_python(python, workdir=None)
+    results_all = cpp_debug_results + cpp_release_results + python_results
+    write_to_csv(file_name_benchmark, results_all)
+    csv_to_graph(file_name_benchmark, iteration_steps, N)
 
 
 
