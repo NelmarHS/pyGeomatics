@@ -82,6 +82,7 @@ def csv_to_graph(file_name_benchmark, iteration_steps, N):
         cpp_release_times.append(df.iloc[i + iteration_steps, 2])
         python_times.append(df.iloc[i + iteration_steps * 2, 2])
 
+    # graphing on log scale
     plt.plot(N, cpp_debug_times, label='C++ debug')
     plt.plot(N, cpp_release_times, label='C++ release')
     plt.plot(N, python_times, label='Python')
@@ -93,8 +94,6 @@ def csv_to_graph(file_name_benchmark, iteration_steps, N):
     plt.legend()
     plt.grid(True)
     plt.show()
-
-
 
 
 
