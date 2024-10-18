@@ -24,50 +24,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e629138-10fd-4667-a03b-c820873e57cf" name="Changes" comment="lecture files cpp">
-      <change afterPath="$PROJECT_DIR$/assignment4/runtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nbody.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nbody.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pyGeomatics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyGeomatics.iml" afterDir="false" />
+    <list default="true" id="2e629138-10fd-4667-a03b-c820873e57cf" name="Changes" comment="near final version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/.cmake/api/v1/reply/cache-v2-20b300d981a703850c3f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-2a431c14a390c9ef78d0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-15T16-42-47-0882.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/ShowIncludes/main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/compiler_depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/nbody.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/nbody.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/nbody.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/nbody.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/nbody.exe" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/nbody.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/nbody.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/nbody.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/cmake-build-debug/nbody.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/cmake-build-debug/nbody.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment4/nbody.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/nbody.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4/nbody.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/nbody.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment4/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/runtime.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +272,7 @@
       <workItem from="1729185778475" duration="10799000" />
       <workItem from="1729206564610" duration="1084000" />
       <workItem from="1729207980510" duration="356000" />
-      <workItem from="1729208350276" duration="3147000" />
+      <workItem from="1729208350276" duration="5275000" />
     </task>
     <task id="LOCAL-00001" summary="Geometry finished">
       <option name="closed" value="true" />
@@ -386,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729011559929</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="near final version">
+      <option name="closed" value="true" />
+      <created>1729211551667</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729211551667</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +384,8 @@
     <MESSAGE value="assignment 3 - Final v5 - handing in" />
     <MESSAGE value="assignment 4 - first commit" />
     <MESSAGE value="lecture files cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture files cpp" />
+    <MESSAGE value="near final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="near final version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

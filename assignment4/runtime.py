@@ -7,7 +7,7 @@ import csv
 cpp_debug = "cmake-build-debug/nbody.exe"
 cpp_release = "cmake-build-release/nbody.exe"
 python = "nbody.py"
-iteration_steps = 1 # fill in the amount of iteration steps must be done
+iteration_steps = 5 # fill in the amount of iteration steps must be done
 iteration_base = 500 # fill in the base iteration number (consequent iteration steps are multiplied by 10)
 N = []
 for i in range(iteration_steps):
@@ -57,8 +57,15 @@ def write_to_csv(file, results_all):
         writer = csv.writer(file, delimiter=';')
         writer.writerow(["Language", "iteration", "exec time"])
 
+        total_time = 0
         for i in results_all:
             writer.writerow([i[0], i[1], i[2]])
+            total_time += i[2]
+
+        # last row displays total runtime
+        writer.writerow([f"Total runtime = {total_time}"])
+
+
 
 
 # function calls to run the benchmarks
