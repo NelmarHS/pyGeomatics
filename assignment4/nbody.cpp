@@ -254,6 +254,7 @@ void write_to_csv(body state[BODIES_COUNT], unsigned int n, double dt) {
     // every timestep
     for (unsigned int step = 0; step < n; ++step) {
         advance(state, dt);
+
         // every body
         for (unsigned int i = 0; i < BODIES_COUNT; ++i) {
             file << state[i].name << ";"

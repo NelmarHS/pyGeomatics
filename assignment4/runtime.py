@@ -13,7 +13,7 @@ cpp_debug = "cmake-build-debug/nbody.exe"
 cpp_release = "cmake-build-release/nbody.exe"
 python = "nbody.py"
 file_name_benchmark = "benchmark_results.csv"
-iteration_steps = 4 # fill in the amount of iteration steps must be done
+iteration_steps = 3 # fill in the amount of iteration steps must be done
 iteration_base = 500 # fill in the base iteration number (consequent iteration steps are multiplied by 10)
 N = []
 for i in range(iteration_steps):
