@@ -242,8 +242,8 @@ body state[] = {
 
 void write_to_csv(body state[BODIES_COUNT], unsigned int n, double dt) {
     /*
-    Just "std::ofstream file(filename)" dumped the csv in the current working directory (cmake-build-debug). In order to
-    place the csv file in the directory where nbody.cpp was located, I found the following solution: The
+    Just "std::ofstream file(filename)" dumped the csv in the current working directory (cmake-build-debug/release).
+    In order to place the csv file in the directory where nbody.cpp was located, I found the following solution: The
     output_path is constructed of: the working directory -> going one directory level back -> adding the filename.
      */
     std::filesystem::path output_path = std::filesystem::current_path().parent_path() / "nbody_cpp_output.csv";

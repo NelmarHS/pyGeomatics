@@ -24,7 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e629138-10fd-4667-a03b-c820873e57cf" name="Changes" comment="near final version">
+    <list default="true" id="2e629138-10fd-4667-a03b-c820873e57cf" name="Changes" comment="final version - missing final checks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment4/nbody.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/nbody.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment4/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4/runtime.py" afterDir="false" />
@@ -273,7 +273,8 @@
       <workItem from="1729206564610" duration="1084000" />
       <workItem from="1729207980510" duration="356000" />
       <workItem from="1729208350276" duration="5467000" />
-      <workItem from="1729245140601" duration="23649000" />
+      <workItem from="1729245140601" duration="23703000" />
+      <workItem from="1729331802040" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="Geometry finished">
       <option name="closed" value="true" />
@@ -379,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729261063610</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="final version - missing final checks">
+      <option name="closed" value="true" />
+      <created>1729299986816</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729299986816</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +419,8 @@
     <MESSAGE value="assignment 4 - first commit" />
     <MESSAGE value="lecture files cpp" />
     <MESSAGE value="near final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="near final version" />
+    <MESSAGE value="final version - missing final checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version - missing final checks" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

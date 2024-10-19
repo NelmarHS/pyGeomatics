@@ -1,5 +1,5 @@
 """This script automatically runs the nbody.py, nbody.exe (debug) and nbody.exe (release). In order for this script
-to work, the nbody.cpp must first be manually ran in debug and release mode"""
+to work, the nbody.cpp must first be manually ran in debug and release mode (at any iteration number)"""
 import subprocess # as per footnote in chapter 14.8, using subprocess module
 import time
 import csv
@@ -26,7 +26,7 @@ def run_command(command, workdir):
     """
     start_time = time.perf_counter()
     # The work directory is added to ensure that the cpp_output.csv is put in the main directory (where runtime.py is
-    # located) and not on folder back (parent folder). This is necessary because of the solution in nbody.cpp that ensures
+    # located) and not in folder back (parent folder). This is necessary because of the solution in nbody.cpp that ensures
     # placement of the output folder in the main folder (nbody.cpp line 249)
     subprocess.run(command, cwd=workdir)
     end_time = time.perf_counter()
@@ -36,7 +36,7 @@ def run_command(command, workdir):
 def benchmark_cpp_debug(file, workdir):
     results_cpp_debug = []
     for iteration in N:
-        command = f".\{file} {iteration}" # terminal command to run the file (as per assignment)
+        command = f".\{file} {iteration}" # terminal command to run the file
         exec_time = run_command(command, workdir)
         results_cpp_debug.append((f"C++ (debug)", iteration, exec_time))
     return results_cpp_debug
@@ -44,7 +44,7 @@ def benchmark_cpp_debug(file, workdir):
 def benchmark_cpp_release(file, workdir):
     results_cpp_release = []
     for iteration in N:
-        command = f".\{file} {iteration}" # terminal command to run the file (as per assignment)
+        command = f".\{file} {iteration}" # terminal command to run the file
         exec_time = run_command(command, workdir)
         results_cpp_release.append((f"C++ (release)", iteration, exec_time))
     return results_cpp_release
@@ -53,7 +53,7 @@ def benchmark_cpp_release(file, workdir):
 def benchmark_python(file, workdir):
     results_python = []
     for iterations in N:
-        command = f"py {file} {iterations}" # terminal command to run the file (as per assignment)
+        command = f"py {file} {iterations}" # terminal command to run the file
         exec_time = run_command(command, workdir)
         results_python.append(("Python", iterations, exec_time))
     return results_python
@@ -75,7 +75,7 @@ def write_to_csv(file, results_all):
 def csv_to_graph(file_name_benchmark, iteration_steps, N):
     df = pd.read_csv(file_name_benchmark, sep=';')
 
-    # creating sublists that contain the time values the different
+    # creating sublists that contain the time values for the different programs
     cpp_debug_times, cpp_release_times , python_times = [], [], []
     for i in range(len(N)):
         cpp_debug_times.append(df.iloc[i, 2])
